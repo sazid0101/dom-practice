@@ -29,3 +29,10 @@ pinkButton.addEventListener("click", makePink)
 function makePink(){
     document.body.style.backgroundColor = "pink"
 }
+
+// orange
+// most of the time we will use it
+
+document.getElementById("make-orange").addEventListener("click", function makeOrange(){
+    document.body.style.backgroundColor = "orange"
+})
