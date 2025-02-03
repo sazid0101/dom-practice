@@ -8,40 +8,57 @@
 </head>
 <body>
     <section id="fruit-solid">
-        <h1 id="food-list">food list</h1>
+        <!-- <h1 id="food-list">food list</h1>
         <ul>
             <li>mango</li>
             <li>apple</li>
             <li>banana</li>
-        </ul>
+        </ul> -->
         <button onclick="fruitSolidBtn()" id="fruit-solid-btn">button</button>
     </section>
 
     <section class="fruit-juice">
-        <h1>food list</h1>
+        <!-- <h1>food list</h1>
         <ul>
             <li>mango juice</li>
             <li>apple cake</li>
             <li>banana ice cream</li>
-        </ul>
+        </ul> -->
         <button id="fruit-juice-btn">click</button>
     </section>
 
     <section class="fruit-juice">
-        <h1>fruit list</h1>
+        <!-- <h1>fruit list</h1>
         <ul>
             <li>juice...</li>
             <li>apple ....</li>
             <li>banana ice cream....</li>
-        </ul>
+        </ul> -->
         <button id="fruit-btn">click me</button>
         <p>......</p>
     </section>
 
     <button id="make-pink">click me for change</button>
     <button id="make-orange">another button</button>
+    <p>........</p>
+
+    <section>
+        <p id = "input-text">input something for change my text</p>
+        <input id ="input-field" type="text">
+        <button id="input-btn">click</button>
+    </section>
     
 
     <script src="js/event.js"></script>
+    <script>
+        document.getElementById("input-btn").addEventListener("click",function(){
+            const inputField = document.getElementById("input-field");
+            const inputText = inputField.value;
+
+            const inputTextDisplay = document.getElementById("input-text");
+            inputTextDisplay.innerText = inputText;
+            inputField.value = "";
+        })
+    </script>
 </body>
 </html>
