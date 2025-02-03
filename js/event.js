@@ -36,3 +36,14 @@ function makePink(){
 document.getElementById("make-orange").addEventListener("click", function makeOrange(){
     document.body.style.backgroundColor = "orange"
 })
+
+// input field 
+
+document.getElementById("input-btn").addEventListener("click",function(){
+    const inputField = document.getElementById("input-field");
+    const inputText = inputField.value;
+
+    const inputTextDisplay = document.getElementById("input-text");
+    inputTextDisplay.innerText = inputText;
+    inputField.value = "";
+})
